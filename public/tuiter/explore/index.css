@@ -1,0 +1,206 @@
+/* specifics - searchbar */
+
+div.wd-search-explore {
+    padding: 5px;
+}
+
+div.wd-settings {
+    width: 30px;
+}
+
+i.wd-settings {
+    position:absolute;
+    top: 19px;
+}
+
+label.wd-search-explore {
+    position: relative;
+    left: 20px;
+    z-index: 10;
+}
+
+input.wd-search-explore {
+    padding:10px;
+    margin:10px;
+    padding-left: 40px;
+    border-radius: 20px;
+    border: none;
+    width: calc(90% - 30px);
+    background-color: rgb(236, 236, 236);
+    position:relative;
+    right:25px;
+}
+
+/* specifics - navtabs */
+ul.wd-navtabs {
+    list-style-type: none;
+    padding-left:15px;
+    display:flex;
+    overflow:hidden;
+    gap: 4vw;
+    width: 105vw;
+    margin: 0;
+    margin-top: 10px;
+}
+
+ul.wd-navtabs > li {
+    min-width: 65px;
+    text-align: center;
+}
+
+ul.wd-navtabs > li > a {
+    color: rgb(168, 168, 168);
+    display:block;
+    padding-bottom:4px;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+ul.wd-navtabs > li > a.wd-active {
+    color:black;
+}
+
+ul.wd-navtabs div.wd-active {
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: rgb(77, 162, 214);
+}
+
+/* title image card */
+div.wd-focuscard {
+    display:block;
+    white-space:nowrap;
+    position:relative;
+    width:100%;
+}
+
+div.wd-focuscard .wd-innertext {
+    display:block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+div.wd-focuscard p, h2 {
+    margin: 5px;
+    color:white;
+}
+
+div.wd-focuscard b {
+    display:inline-block;
+    background-color:rgb(228, 104, 104);
+    padding: 5px;
+    border-radius:5px
+}
+
+/* Topics */
+ul.wd-topics {
+    display: block;
+    list-style-type: none;
+    margin:0px;
+    padding-left:0px;
+}
+
+ul.wd-topics li {
+    padding: 10px;
+}
+
+ul.wd-topics i {
+    float: right;
+    color:rgb(151, 151, 151);
+    position:relative;
+    top: -40px;
+}
+
+ul.wd-topics p, ul.wd-topics h3 {
+    margin: 3px;
+}
+
+ul.wd-topics p {
+    font-size: 12px;
+}
+
+/* bootstrap helper styling */
+
+.wdbs-searchbar {
+    position:relative;
+    height:45px;
+}
+
+.wdbs-searchbar input{
+    width: 90%;
+}
+.wdbs-searchbar label{
+    position:absolute;
+    top:-33px;
+    left:15px;
+}
+
+.wdbs-more {
+    position:absolute;
+    right:4px;
+    top:5px;
+}
+.wdbs-more .fa-stack-1x {
+    top:-6px;
+}
+ul.list-group a {
+    text-decoration: none;
+}
+
+.wdbs-settings {
+    float:right;
+    top:-38px;
+}
+
+li.nav-item{
+    min-width:90px;
+}
+
+div.wd-focuscard p.wdbs-override, h2.wdbs-override {
+    margin: 4px;
+    color:white;
+}
+
+div.wd-focuscard p.wdbs-override {
+    font-size: 12px;
+}
+
+ul.wdbs-topics {
+    position:relative;
+    margin:0px;
+    padding:0px;
+}
+
+ul.wdbs-topics span {
+    white-space:nowrap
+}
+
+ul.wdbs-topics div.col-xxl-5 {
+    z-index: 100;
+}
+
+ul.wdbs-topics li.list-group-item b {
+    font-size: 14px;
+    font-weight:bold;
+    color:black;
+}
+
+ul.wdbs-topics li.list-group-item{
+    font-size: 13px;
+    color:rgb(151, 151, 151);
+}
+
+ul.wdbs-topics p {
+    margin: 0px;
+    padding:0px;
+}
+
+ul.wdbs-topics .fa-stack {
+    color:black;
+    font-size: .7em;
+    position:relative;
+    top:-5px;
+}

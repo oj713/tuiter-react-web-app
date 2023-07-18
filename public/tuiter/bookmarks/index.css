@@ -1,0 +1,54 @@
+.wd-header {
+    font-size:20px;
+    padding: 10px;
+}
+.wd-header i {
+    font-size: .7em;
+}
+
+.wd-tuit {
+    display:flex;
+    padding-left: 12px;
+    padding-right:12px;
+    border: 1px solid rgb(236, 236, 236);
+}
+.wd-profilebar {
+    width:20vw;
+    max-width: 75px;
+    padding: 5px
+}
+.wd-profilebar img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.wd-mainbar {
+    padding-top: 12px;
+}
+.wd-mainbar .fa-stack {
+    font-size: .6em;
+}
+.wd-card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 1vw;
+    border:1px darkgray solid;
+    border-radius: 30px;
+    overflow:hidden;
+}
+
+.wd-card p {
+    margin:2%;
+}
+
+.wd-card img {
+    width:100%;
+}
+
+.wd-buttons {
+    display:flex;
+    justify-content: flex-start;
+    gap: 7%;
+    list-style-type: none;
+    padding-left:0;
+}

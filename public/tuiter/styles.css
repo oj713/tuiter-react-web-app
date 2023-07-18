@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+  font: 14px sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    margin:0;
+}
+
+div.wd-main {
+    max-width: 800px;
+    overflow:hidden;
+    margin:auto;
+}
+
+p {
+    color:rgb(151, 151, 151);
+    font-size: 14px;
+    margin:0px;
+    padding:0px;
+}
+
+h3 {
+    font-size: 14px;
+    padding:0px;
+    margin:0px;
+}
+
+i.fa {
+    padding:5px;
+}
+
+.wd-darkgray {
+    color: rgb(168, 168, 168);
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-black {
+    color:black;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(77, 162, 214);
+}
