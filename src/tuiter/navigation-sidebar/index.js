@@ -30,7 +30,8 @@ const NavigationSidebar = () => {
                 <AiOutlineTwitter/>
             </Link>
             {links.map((link) =>
-                <Link to={`/tuiter/${link.name}`} className={`list-group-item ${active === link.name ? "active" : ""}`}>
+                <Link to={`/tuiter/${link.name.toLowerCase()}`} className={
+                    `list-group-item ${active === link.name.toLowerCase() ? "active" : ""}`}>
                     {link.icon} 
                     <p className = "d-none d-xl-inline-block m-2">{link.name}</p>
                 </Link>
