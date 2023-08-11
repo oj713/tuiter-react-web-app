@@ -7,7 +7,7 @@ import {TbCalendarStats} from "react-icons/tb";
 import {BiBold, BiItalic} from "react-icons/bi";
 
 import {useDispatch} from "react-redux";
-import {createTuit} from "./reducers/tuits-reducer";
+import {createTuitThunk} from "./services/tuits-thunks";
 
 const WhatsHappening = () => {
  let [whatsHappening, setWhatsHappening] = useState('');
@@ -17,14 +17,14 @@ const WhatsHappening = () => {
    const newTuit = {
     tuit: whatsHappening
    }
-    dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening('')
  }
 
  return (
    <div className="row text-center">
      <div className="col-2">
-       <img class = "rounded-circle shadow" 
+       <img className = "rounded-circle shadow" 
        src="/images/nasa.png" width={60}/>
      </div>
      <div className="col-10">

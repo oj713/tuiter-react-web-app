@@ -3,30 +3,19 @@ import { MdVerified } from "react-icons/md";
 import TuitStats from "./tuit-stats";
 import {RxCross2} from "react-icons/rx";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
+import { deleteTuitThunk } from "../services/tuits-thunks";
 
 const TuitItem = (
-    {tuit = {_id: 123,
-         topic: "Space",
-         userName: "SpaceX",
-         title: "tuit title",
-         time: "2h",
-         image: "spacex.png",
-         liked: false,
-         replies: 37,
-         retuits: 567,
-         likes: 23344,
-         handle: "@spacex",
-         tuit: "tuit content"}}
+    {tuit}
 ) => {
     // styles for some tuits
     const maxProfileWidth = {
-        "max-width": "60px"
+        "maxWidth": "60px"
     }
 
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-      dispatch(deleteTuit(id))
+      dispatch(deleteTuitThunk(id))
     }
 
     return(
@@ -42,7 +31,7 @@ const TuitItem = (
                 <RxCross2 className = "icon"/>
               </button>
             </div>
-            <div><b>{tuit.userName}</b>
+            <div><b>{tuit.username}</b>
                 <MdVerified className = "text-primary icon"/>
                 {tuit.handle} • {tuit.time}
             </div>
